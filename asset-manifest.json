@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/pgupta04/resume/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/pgupta04/resume/static/js/main.25147882.chunk.js",
+    "main.js.map": "/pgupta04/resume/static/js/main.25147882.chunk.js.map",
+    "runtime-main.js": "/pgupta04/resume/static/js/runtime-main.4c9ce020.js",
+    "runtime-main.js.map": "/pgupta04/resume/static/js/runtime-main.4c9ce020.js.map",
+    "static/js/2.3842aafc.chunk.js": "/pgupta04/resume/static/js/2.3842aafc.chunk.js",
+    "static/js/2.3842aafc.chunk.js.map": "/pgupta04/resume/static/js/2.3842aafc.chunk.js.map",
+    "index.html": "/pgupta04/resume/index.html",
+    "precache-manifest.e840ebfbfef35dc3fea6c987ce430625.js": "/pgupta04/resume/precache-manifest.e840ebfbfef35dc3fea6c987ce430625.js",
+    "service-worker.js": "/pgupta04/resume/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/pgupta04/resume/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.3842aafc.chunk.js.LICENSE.txt": "/pgupta04/resume/static/js/2.3842aafc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c9ce020.js",
+    "static/js/2.3842aafc.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.25147882.chunk.js"
+  ]
+}
