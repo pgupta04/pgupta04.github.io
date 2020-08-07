@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Landing from './pages/Landing';
+import AllPages from './pages/AllPages';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Landing />
+    <AllPages/>
+    {/* <Landing /> */}
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -5,6 +5,7 @@ export interface ISummarydata{
 
 export interface IHeaderdata{
   name: string;
+  designation?: string;
   email: string;
   phone: string;
   linkedInURL?: string;
