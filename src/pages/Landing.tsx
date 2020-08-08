@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 import { Grid, Button, Box, Divider } from "@material-ui/core";
-import Summary from '../components/Summary';
-import Header from '../components/Header';
-import summaryData from '../data/SummaryData';
-import headerData from '../data/HeaderData';
+import Summary from "../components/Summary";
+import Header from "../components/Header";
+import summaryData from "../data/SummaryData";
+import headerData from "../data/HeaderData";
 
 const Landing = () => {
   console.log(summaryData);
@@ -14,13 +14,23 @@ const Landing = () => {
           <Header {...headerData}></Header>
         </Grid>
         <Grid item xs={12}>
-          <Divider/>
+          <Divider />
         </Grid>
         <Grid item xs={12}>
-          <Summary {...summaryData}></Summary>
+          <Grid container spacing={1}>
+            <Grid item xs={12} sm={8}>
+              <Summary {...summaryData}></Summary>
+            </Grid>
+            <Grid item>
+              <Divider orientation="vertical"/>
+            </Grid>
+            <Grid item xs={12} sm={3}>
+              <Summary {...summaryData}></Summary>
+            </Grid>
+          </Grid>
         </Grid>
         <Grid item xs={12}>
-          <Divider/>
+          <Divider />
         </Grid>
       </Grid>
     </Box>
