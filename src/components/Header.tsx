@@ -12,8 +12,8 @@ const Header = (props: IHeaderProps) => {
   return (
     <Paper square elevation={0}>
       <Box padding={2}>
-        <Grid container spacing={1}>
-          <Grid item xs={12} sm={9}>
+        <Grid container spacing={0} justify="space-between">
+          <Grid item xs={12} sm={8}>
             <Grid container  spacing={1}>
               <Grid item xs={12} sm={1}>
                 <Avatar alt="Parveen Gupta" src={Photo} />
@@ -34,10 +34,10 @@ const Header = (props: IHeaderProps) => {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} sm={3}>
-            <Grid container>
+          <Grid item xs={12} sm={4}>
+            <Grid container spacing={1}>
               <Grid item xs={12}>
-                <Grid container spacing={1}>
+                <Grid container spacing={2}>
                   <Grid item xs={1}>
                     <PhoneAndroidIcon color="primary" />
                   </Grid>
@@ -46,8 +46,8 @@ const Header = (props: IHeaderProps) => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item xs={12} spacing={1}>
-                <Grid container>
+              <Grid item xs={12}>
+                <Grid container spacing={2}>
                   <Grid item xs={1}>
                     <EmailIcon color="primary" />
                   </Grid>
@@ -56,8 +56,8 @@ const Header = (props: IHeaderProps) => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item xs={12} spacing={1}>
-                <Grid container>
+              <Grid item xs={12}>
+                <Grid container  spacing={2}>
                   <Grid item xs={1}>
                     <GitHubIcon color="primary" />
                   </Grid>
@@ -66,8 +66,8 @@ const Header = (props: IHeaderProps) => {
                   </Grid>
                 </Grid>
               </Grid>
-              <Grid item xs={12} spacing={1}>
-                <Grid container>
+              <Grid item xs={12} >
+                <Grid container spacing={2}>
                   <Grid item xs={1}>
                     <LinkedInIcon color="primary" />
                   </Grid>

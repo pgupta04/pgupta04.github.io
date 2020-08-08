@@ -8,7 +8,7 @@ import headerData from "../data/HeaderData";
 const Landing = () => {
   console.log(summaryData);
   return (
-    <Box px={2} py={2}>
+    <Box px={2} py={2} bgcolor="white">
       <Grid container spacing={2}>
         <Grid item xs={12}>
           <Header {...headerData}></Header>
