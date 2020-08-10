@@ -4,6 +4,8 @@ import Summary from "../components/Summary";
 import Header from "../components/Header";
 import summaryData from "../data/SummaryData";
 import headerData from "../data/HeaderData";
+import Skills from "../components/Skills";
+import skilldData from "../data/SkillsData";
 
 const Landing = () => {
   console.log(summaryData);
@@ -25,7 +27,7 @@ const Landing = () => {
               <Divider orientation="vertical"/>
             </Grid>
             <Grid item xs={12} sm={3}>
-              <Summary {...summaryData}></Summary>
+              <Skills skillGroup={skilldData}></Skills>
             </Grid>
           </Grid>
         </Grid>

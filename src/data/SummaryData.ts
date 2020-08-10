@@ -1,6 +1,6 @@
-import { ISummarydata } from "../types/data";
+import { ISummaryData } from "../types/data";
 
-export const summaryData: ISummarydata = {
+export const summaryData: ISummaryData = {
   detail: "Summary",
   bullets: [
     "15+ years’ experience in high end programming and delivering high quality and scalable applications.",

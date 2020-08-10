@@ -1,6 +1,6 @@
-import {IHeaderdata} from '../types/data';
+import {IHeaderData} from '../types/data';
 
-export const headerData:IHeaderdata = {
+export const headerData:IHeaderData = {
   name: "Parveen Gupta",
   designation: "Principal Software Engineer",
   email: "parveen.gupta@hotmail.com",
