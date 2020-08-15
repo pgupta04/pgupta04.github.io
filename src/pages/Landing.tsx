@@ -6,6 +6,8 @@ import summaryData from "../data/SummaryData";
 import headerData from "../data/HeaderData";
 import Skills from "../components/Skills";
 import skilldData from "../data/SkillsData";
+import WorkExperience from "../components/WorkExperience";
+import workExpData from "../data/WorkExpData";
 
 const Landing = () => {
   console.log(summaryData);
@@ -33,6 +35,9 @@ const Landing = () => {
         </Grid>
         <Grid item xs={12}>
           <Divider />
+        </Grid>
+        <Grid item xs={12}>
+          <WorkExperience workExperiences={workExpData}/>
         </Grid>
       </Grid>
     </Box>

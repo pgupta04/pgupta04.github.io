@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: BlinkMacSystemFont;
+        font-size: 150%;
+        background: white;
+      }
+      
+      #container {
+       padding: 10px;
+       display: flex;
+       border: 1px solid white;
+       justify-content: space-between;
+       border-radius: 5px;
+       background-color: #105cb3;        
+      }
+      
+      div {
+       color: white; 
+      }
+      
+      h3 {
+       color: black; 
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.8.6/umd/react.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.8.6/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/jsx">
+/*    
+At OutSchool teachers can create classes but they cannot go live without Outschool reviewing them. In the teacher experience there is a banner that shows the status of the class based on where it is at in the review process.
+The process starts off by creating a class with a title then it's in the unlisted state upon requesting the the class to be listed it's in the requested listing state when. After Outschool approves it(we'll hand wave this part) -- it will go into the Listed state. The teacher can unlist the class after it's listed. It also can be archived anytime it's not in the listed state. 
+
+
+State Transitions
+Listing Status Label : Unlisted (Archived) -> Listing requested -> Listed -> Unlisted or Archived
+Listing Button: Request Listing -> List -> Unlist this class -> Request Listing
+Archive Button: Archive -> Unarchive -> Archive
+When archived the listing button is hidden
+*/
+  const UNLISTED = 'unlisted';
+  const LISTING_REQUESTED = 'listing requested';
+  const LISTED = 'listed';
+  const ARCHIVED = 'archived';
+
+  const displayBtt = {
+    [UNLISTED]: 'Request Listing',
+    [LISTING_REQUESTED]: 'List',
+    [LISTED]: 'Unlist this class',
+    [ARCHIVED]: 'Unarchive',
+    // []: 'Archive',
+  };
+
+  function stateChangeRule(currentState, archive) {
+    let newState = currentState;
+    if (archive) {
+      if (currentState === UNLISTED) {
+        newState = ARCHIVED;
+      }
+      return newState;
+    }
+    
+    switch(currentState) {
+      case UNLISTED:
+        newState = LISTING_REQUESTED;
+        break;
+      case LISTING_REQUESTED:
+        newState = LISTED;
+        break;
+      case LISTED:
+      case ARCHIVED:
+        newState = UNLISTED;
+        break;
+    }
+
+    return newState;
+  }
+
+      function ClassListingStatus() {
+        const [state, setState] = React.useState(UNLISTED);
+        const displayText = _.startCase(state);
+        const onClick = (archive) => setState(oldState => stateChangeRule(oldState, archive));
+        const isArchived = state === ARCHIVED;
+        
+        return (
+         <div>
+          <h3>Let's Talk Fortnite! - Battle Royale (Subscription Class)</h3>
+          <div id="container">
+            <div>{displayText}</div>
+            <div>
+             <button onClick={() => onClick(!isArchived)}>{isArchived ? 'Unarchive' : 'Archive'}</button>
+              {state !== ARCHIVED && <button onClick={() => onClick(false)}>{displayBtt[state]}</button>}
+            </div>
+          </div>          
+         </div>
+        );
+      }
+
+      ReactDOM.render(
+        <ClassListingStatus />,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>

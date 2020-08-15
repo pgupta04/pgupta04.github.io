@@ -17,3 +17,7 @@ export interface ISkillsData{
   type: TSkillType;
   skills: string[];
 }
+
+export interface IWorkExperience{
+  
+}

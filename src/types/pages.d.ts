@@ -1,11 +1,18 @@
-import { ISummaryData, IHeaderData, ISkillsData } from "./data";
+import {
+  ISummaryData,
+  IHeaderData,
+  ISkillsData,
+  IWorkExperience,
+} from "./data";
 
-export interface ISummaryProps extends ISummaryData{
-}
+export interface ISummaryProps extends ISummaryData {}
 
-export interface IHeaderProps extends IHeaderData{
-}
+export interface IHeaderProps extends IHeaderData {}
 
 export interface ISkillsProps {
-  skillGroup: ISkillsData[]
+  skillGroup: ISkillsData[];
+}
+
+export interface IWorkExperienceProps {
+  workExperiences: IWorkExperience[];
 }

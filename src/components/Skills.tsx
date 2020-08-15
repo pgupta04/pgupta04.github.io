@@ -12,9 +12,11 @@ const Skills = (props: ISkillsProps) => {
               Skills
             </Typography>
           </Grid>
-          {props?.skillGroup?.map((item) => {
-            return (
-              <>
+        </Grid>
+        {props?.skillGroup?.map((item) => {
+          return (
+            <Box py={1}>
+              <Grid container spacing={2}>
                 <Grid item xs={12}>
                   <Typography variant="body1">{item.type}</Typography>
                 </Grid>
@@ -27,10 +29,10 @@ const Skills = (props: ISkillsProps) => {
                     ))}
                   </Grid>
                 </Grid>
-              </>
-            );
-          })}
-        </Grid>
+              </Grid>
+            </Box>
+          );
+        })}
       </Box>
     </Paper>
   );
