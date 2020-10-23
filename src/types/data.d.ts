@@ -19,8 +19,10 @@ export interface ISkillsData{
 }
 
 export interface IWorkExperience{
+  company:string;
   title: string;
-  timeline: string;
+  startDate: string;
+  endDate: string;
   description?: string;
   responsibilities?: string[];
 }

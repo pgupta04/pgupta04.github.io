@@ -12,6 +12,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import LabelIcon from "@material-ui/icons/Label";
+import LabelImportantTwoToneIcon from "@material-ui/icons/LabelImportantTwoTone";
 
 const Summary = (props: ISummaryProps) => (
   <Paper square elevation={0}>
@@ -27,7 +28,8 @@ const Summary = (props: ISummaryProps) => (
             {props?.bullets?.map((item) => (
               <ListItem>
                 <ListItemIcon>
-                  <LabelIcon />
+                <LabelImportantTwoToneIcon color="primary" />
+                  {/* <LabelIcon /> */}
                 </ListItemIcon>
                 <ListItemText
                   primary={<Typography variant="body2">{item}</Typography>}
