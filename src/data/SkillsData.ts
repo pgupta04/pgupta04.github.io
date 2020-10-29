@@ -10,6 +10,7 @@ export const skillsData: ISkillsData[] = [
       "Spring",
       "NodeJS",
       "React",
+      "GraphQL",
       "Tomcat",
       "AWS",
       "Jenkins",
