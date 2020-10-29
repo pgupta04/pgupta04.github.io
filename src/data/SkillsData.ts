@@ -3,11 +3,31 @@ import { ISkillsData } from "../types/data";
 export const skillsData: ISkillsData[] = [
   {
     type: "Technical",
-    skills: ["Java", "Typescript", "Javascript", "Spring", "NodeJS","React", "AWS", "Tomcat"],
+    skills: [
+      "Java",
+      "Typescript",
+      "Javascript",
+      "Spring",
+      "NodeJS",
+      "React",
+      "Tomcat",
+      "AWS",
+      "Jenkins",
+      "Jira",
+      "Azure Devops",
+      "Azure Pipelines",
+      "GitLabs",
+      "Oracle",
+      "Postgres",
+      "DynamoDB",
+      "Elastic Search",
+      "CI/CD",
+      "Docker"
+    ],
   },
   {
     type: "Professional",
-    skills: ["Listener", "Communicator", "Mentor"],
+    skills: ["Listener", "Communicator", "Mentor", "Leader"],
   },
 ];
 

@@ -15,7 +15,7 @@ const WorkExperience = (props: IWorkExperienceProps) => {
         <Grid container>
           <Grid item xs={12}>
             <Typography variant="h5" color="primary">
-              Current Work Experience
+              {props?.label ?? "Current Work Experience"}
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -24,23 +24,25 @@ const WorkExperience = (props: IWorkExperienceProps) => {
                 <ListItem>
                   <Paper square elevation={0}>
                     <Box padding={2}>
-                    <Typography variant="h6" color="textSecondary">
-                      {item?.company} | {item?.startDate}-{item?.endDate}
-                    </Typography>
-                    <List>
-                      {item?.responsibilities?.map((task: string) => (
-                        <ListItem>
-                          <ListItemIcon>
-                            <LabelImportantTwoToneIcon color="primary" />
-                          </ListItemIcon>
-                          {/* <LabelIcon>
+                      <Typography variant="h6" color="textSecondary">
+                        {item?.company} {item?.startDate && "|"}{" "}
+                        {item?.startDate} {item?.endDate && "- "}
+                        {item?.endDate}
+                      </Typography>
+                      <List>
+                        {item?.responsibilities?.map((task: string) => (
+                          <ListItem>
+                            <ListItemIcon>
+                              <LabelImportantTwoToneIcon color="primary" />
+                            </ListItemIcon>
+                            {/* <LabelIcon>
                         </LabelIcon> */}
-                          <Typography variant="body1" color="textSecondary">
-                            {task}
-                          </Typography>
-                        </ListItem>
-                      ))}
-                    </List>
+                            <Typography variant="body1" color="textSecondary">
+                              {task}
+                            </Typography>
+                          </ListItem>
+                        ))}
+                      </List>
                     </Box>
                   </Paper>
                 </ListItem>

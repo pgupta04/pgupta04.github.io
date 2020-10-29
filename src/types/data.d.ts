@@ -20,9 +20,9 @@ export interface ISkillsData{
 
 export interface IWorkExperience{
   company:string;
-  title: string;
-  startDate: string;
-  endDate: string;
+  title?: string;
+  startDate?: string;
+  endDate?: string;
   description?: string;
   responsibilities?: string[];
 }

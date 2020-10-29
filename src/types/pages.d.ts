@@ -14,5 +14,6 @@ export interface ISkillsProps {
 }
 
 export interface IWorkExperienceProps {
+  label: string;
   workExperiences: IWorkExperience[];
 }
