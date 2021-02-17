@@ -4,7 +4,7 @@ import { ISkillsProps } from "../types/pages";
 
 const Skills = (props: ISkillsProps) => {
   return (
-    <Paper square elevation={0}>
+    <Paper square elevation={5}>
       <Box padding={2}>
         <Grid container>
           <Grid item xs={12}>

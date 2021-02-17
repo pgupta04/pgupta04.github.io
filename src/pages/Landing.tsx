@@ -18,25 +18,25 @@ const Landing = () => {
         <Grid item xs={12}>
           <Header {...headerData}></Header>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Divider />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12}>
           <Grid container spacing={1}>
             <Grid item xs={12} sm={8}>
               <Summary {...summaryData}></Summary>
             </Grid>
-            <Grid item>
+            {/* <Grid item>
               <Divider orientation="vertical"/>
-            </Grid>
+            </Grid> */}
             <Grid item xs={12} sm={3}>
               <Skills skillGroup={skilldData}></Skills>
             </Grid>
           </Grid>
         </Grid>
-        <Grid item xs={12}>
+        {/* <Grid item xs={12}>
           <Divider />
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} sm={6}>
           <WorkExperience label="Current Work Experience" workExperiences={workExpData}/>
         </Grid>

@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Grid,
-  Button,
   Box,
   Paper,
   Typography,
@@ -15,7 +14,7 @@ import LabelIcon from "@material-ui/icons/Label";
 import LabelImportantTwoToneIcon from "@material-ui/icons/LabelImportantTwoTone";
 
 const Summary = (props: ISummaryProps) => (
-  <Paper square elevation={0}>
+  <Paper square elevation={5}>
     <Box padding={2}>
       <Grid container>
         <Grid item xs={12}>
@@ -32,7 +31,7 @@ const Summary = (props: ISummaryProps) => (
                   {/* <LabelIcon /> */}
                 </ListItemIcon>
                 <ListItemText
-                  primary={<Typography variant="body2">{item}</Typography>}
+                  primary={<Typography variant="body2" color="textSecondary">{item}</Typography>}
                 />
               </ListItem>
             ))}

@@ -10,9 +10,7 @@ export const skillsData: ISkillsData[] = [
       "Spring",
       "NodeJS",
       "React",
-      "GraphQL",
       "Tomcat",
-      "AWS",
       "Jenkins",
       "Jira",
       "Azure Devops",
@@ -20,15 +18,32 @@ export const skillsData: ISkillsData[] = [
       "GitLabs",
       "Oracle",
       "Postgres",
-      "DynamoDB",
-      "Elastic Search",
       "CI/CD",
       "Docker"
     ],
   },
   {
-    type: "Professional",
+    type: "Cloud",
+    skills: [
+      "AWS Cognito", 
+      "Lambda", 
+      "API Gateway", 
+      "Amplify", 
+      "AppSync (GraphQL)", 
+      "DynamoDB", 
+      "ElasticSearch", 
+      "IAM", 
+      "Cloud Formation", 
+      "SQS", 
+      "SNS"],
+  },
+  {
+    type: "Leadership",
     skills: ["Listener", "Communicator", "Mentor", "Leader"],
+  },
+  {
+    type: "Management",
+    skills: ["Autonomy", "Team Motivation", "Delegation", "Coaching", "Team Building"],
   },
 ];
 
