@@ -31,6 +31,39 @@ const workExpData: IWorkExperience[] = [
       "Enhanced Jasperserver (TIBCO product for reporting, written in Java) code base in customizing to our requirements instead of requesting for new customized features from TIBCO. ",
     ]
   },
+  {
+    company:"JP Morgan Chase",
+    startDate:"May 2011",
+    endDate:"Aug 2013",
+    title:"Senior Software Engineer",
+    responsibilities:[
+      "Worked on Bulk Loan application auto approval application",
+    ]
+  },
+  {
+    company:"OC Tanner",
+    startDate:"Mar 2009",
+    endDate:"Apr 2011",
+    title:"Senior Software Engineer",
+    responsibilities:[
+    ]
+  },
+  {
+    company:"Citi Mortgage",
+    startDate:"Jun 2006",
+    endDate:"Mar 2009",
+    title:"Senior Software Engineer",
+    responsibilities:[
+    ]
+  },
+  {
+    company:"Satyam Computer Services",
+    startDate:"Jan 2004",
+    endDate:"May 2006",
+    title:"Software Engineer",
+    responsibilities:[
+    ]
+  },
 ];
 
 export default workExpData;
