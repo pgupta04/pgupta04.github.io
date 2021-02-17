@@ -7,6 +7,15 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import Avatar from "@material-ui/core/Avatar";
 import Photo from "../assets/Parveen.jpg";
+import {
+  orange,
+  indigo,
+  teal,
+  deepPurple,
+  blueGrey,
+  amber,
+  green,
+} from "@material-ui/core/colors";
 
 const Header = (props: IHeaderProps) => {
   return (
@@ -25,7 +34,7 @@ const Header = (props: IHeaderProps) => {
                 <Avatar
                   alt="Parveen Gupta"
                   src={Photo}
-                  style={{ height: "150px", width: "150px" }}
+                  style={{ height: "150px", width: "150px", border: "5px solid", borderColor:"teal"}}
                 />
               </Grid>
               <Grid item xs={12} md={8}>
