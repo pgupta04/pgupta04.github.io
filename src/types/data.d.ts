@@ -12,7 +12,7 @@ export interface IHeaderData{
   githubURL?: string;
 };
 
-type TSkillType = 'Programming'| 'Professional' | 'Personnal' | 'Technical' | 'Cloud' | 'Leadership' | 'Management';
+type TSkillType = 'FrontEnd'| 'Backend' |'Programming'| 'Professional' | 'Personnal' | 'Technical' | 'Cloud' | 'Leadership' | 'Management';
 export interface ISkillsData{
   type: TSkillType;
   skills: string[];

@@ -13,7 +13,7 @@ const Skills = (props: ISkillsProps) => {
             </Typography>
           </Grid>
         </Grid>
-        {props?.skillGroup?.map((item) => {
+        {props?.skillGroup?.map((item,index) => {
           return (
             <Box py={1}>
               <Grid container spacing={2}>
@@ -24,7 +24,7 @@ const Skills = (props: ISkillsProps) => {
                   <Grid container spacing={1}>
                     {item?.skills?.map((item) => (
                       <Grid item>
-                        <Chip label={item} size="small" />
+                        <Chip label={item} size="small" color={index%2==0?'primary':'secondary'} />
                       </Grid>
                     ))}
                   </Grid>

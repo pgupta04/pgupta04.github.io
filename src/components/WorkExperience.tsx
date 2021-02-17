@@ -13,7 +13,7 @@ const WorkExperience = (props: IWorkExperienceProps) => {
         <Grid container>
           <Grid item xs={12}>
             <Typography variant="h5" color="primary">
-              {props?.label ?? "Current Work Experience"}
+              {props?.label ?? "Work Experience"}
             </Typography>
           </Grid>
           <Grid item xs={12}>

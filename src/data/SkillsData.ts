@@ -2,14 +2,14 @@ import { ISkillsData } from "../types/data";
 
 export const skillsData: ISkillsData[] = [
   {
-    type: "Technical",
+    type: "Backend",
     skills: [
       "Java",
+      "Spring",
+      "Spring Boot",
       "Typescript",
       "Javascript",
-      "Spring",
       "NodeJS",
-      "React",
       "Tomcat",
       "Jenkins",
       "Jira",
@@ -20,6 +20,20 @@ export const skillsData: ISkillsData[] = [
       "Postgres",
       "CI/CD",
       "Docker"
+    ],
+  },
+  {
+    type: "FrontEnd",
+    skills: [
+      "ReactJS",
+      "Typescript",
+      "Javascript",
+      "NodeJS Mocking",
+      "HTML5",
+      "CSS3",
+      "Micro FrontEnds",
+      "Material UI",
+      "Jest Testing"
     ],
   },
   {
